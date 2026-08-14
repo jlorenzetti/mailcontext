@@ -14,5 +14,6 @@
 | [prior-art.md](prior-art.md) | Competitive snapshot |
 | [open-questions.md](open-questions.md) | Residuals only |
 
-Code lives in [`extension/`](../extension/). Packaging helpers in
-[`scripts/`](../scripts/) and [`store/`](../store/).
+Code lives in [`extension/`](../extension/). Public site in
+[`site/`](../site/). Packaging helpers in [`scripts/`](../scripts/) and
+[`store/`](../store/).

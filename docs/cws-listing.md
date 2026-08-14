@@ -1,7 +1,8 @@
 # Chrome Web Store listing
 
 Listing text and assets. Contract: [Product Definition v1](product-definition-v1.md).
-Homepage: [github.com/jlorenzetti/mailcontext](https://github.com/jlorenzetti/mailcontext).
+Homepage: [mailcontext.com](https://mailcontext.com) ([`site/`](../site/)).
+Until Pages + DNS serve HTTPS, CWS may use the GitHub URLs below.
 
 ## Item
 
@@ -9,7 +10,7 @@ Homepage: [github.com/jlorenzetti/mailcontext](https://github.com/jlorenzetti/ma
 |---|---|
 | Name | MailContext |
 | Summary (≤132 chars) | Copy a Gmail message or thread as clean Markdown—ready to paste into AI, docs, chat, or notes. |
-| Category | Productivity |
+| Category | Productivity / Tools |
 | Language | English |
 
 Manifest `description` is a shorter form of the summary.
@@ -58,6 +59,9 @@ See [privacy.md](privacy.md). Store disclosures follow the Chrome Web Store
 policies. Remote code: none.
 
 Privacy policy URL:
+`https://mailcontext.com/privacy`
+
+Fallback until the domain is live:
 `https://github.com/jlorenzetti/mailcontext/blob/main/docs/privacy.md`
 
 ## Graphic assets

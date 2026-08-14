@@ -16,6 +16,7 @@ human-readable Markdown ready to paste anywhere.
 - Code: [`extension/`](extension/) (Chromium MV3)
 - Privacy: [docs/privacy.md](docs/privacy.md)
 - Store listing copy: [docs/cws-listing.md](docs/cws-listing.md)
+- Public site: [`site/`](site/) → [mailcontext.com](https://mailcontext.com)
 
 License: **MIT**. Free; Chrome Web Store first.
 
@@ -34,8 +35,9 @@ License: **MIT**. Free; Chrome Web Store first.
 |---|---|
 | `extension/` | Unpacked Chrome extension (load this folder) |
 | `docs/` | Product, privacy, ADRs, golden examples |
+| `site/` | Public landing (GitHub Pages → mailcontext.com) |
 | `store/` | Chrome Web Store graphic extras (not in the zip) |
-| `scripts/` | Icon render + zip pack helpers |
+| `scripts/` | Icon render, zip pack, and site build helpers |
 
 ## Documentation
 

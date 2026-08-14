@@ -1,0 +1,126 @@
+<!--
+  MailContext public homepage (GitHub Pages).
+  Brand: docs/decisions/0007-brand-mark-and-ink-plate.md
+  Install CTA: GitHub release until the Chrome Web Store item is public.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MailContext — Email, copied right.</title>
+    <meta
+      name="description"
+      content="Copy a Gmail message or thread as clean Markdown—ready to paste into AI, docs, chat, or notes."
+    />
+    <link rel="canonical" href="https://mailcontext.com/" />
+    <meta name="theme-color" content="#1E3A4C" />
+    <meta property="og:title" content="MailContext" />
+    <meta
+      property="og:description"
+      content="Email, copied right. Copy a Gmail message or thread as clean Markdown."
+    />
+    <meta property="og:url" content="https://mailcontext.com/" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="top">
+        <a class="brand" href="/">
+          <img src="/favicon.svg" width="28" height="28" alt="" />
+          MailContext
+        </a>
+        <nav class="nav" aria-label="Site">
+          <a href="https://github.com/jlorenzetti/mailcontext">GitHub</a>
+          <a href="/privacy/">Privacy</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div>
+            <p class="kicker">Chrome extension</p>
+            <h1>Email,<br />copied right.</h1>
+            <p class="lede">
+              Copy a Gmail message or thread as clean, compact Markdown—ready
+              to paste into an AI assistant, a doc, chat, or notes.
+            </p>
+            <p class="actions">
+              <a class="btn" href="https://github.com/jlorenzetti/mailcontext/releases/latest">Install for Chrome</a>
+              <a class="text-link" href="https://github.com/jlorenzetti/mailcontext">Source</a>
+            </p>
+          </div>
+          <figure class="sample">
+            <figcaption>Clipboard · Copy message</figcaption>
+            <pre><code>Subject: Ready when you are
+From: Andrea Conti &lt;andrea.conti@example.com&gt;
+Date: Thu, 13 Aug 2026 21:09:53 +0200
+To: Jacopo Lorenzetti &lt;jacopo.lorenzetti@example.com&gt;
+
+Can you paste this into the doc as clean context—headers included, quotes stripped?
+
+Thursday works on my side.</code></pre>
+          </figure>
+        </section>
+
+        <section class="steps" aria-labelledby="use-heading">
+          <h2 class="kicker" id="use-heading">How to use</h2>
+          <ol>
+            <li>
+              <span class="num">01</span>
+              <span>Open a conversation in Gmail</span>
+            </li>
+            <li>
+              <span class="num">02</span>
+              <span>Thread More (⋮) → Copy thread<br />Message More (⋮) → Copy message</span>
+            </li>
+            <li>
+              <span class="num">03</span>
+              <span>Paste</span>
+            </li>
+          </ol>
+          <p class="hint">
+            Shortcuts: <code>Alt+Shift+T</code> / <code>Alt+Shift+M</code>
+            (on macOS, Alt is Option). Remap in
+            <code>chrome://extensions/shortcuts</code> if needed.
+          </p>
+        </section>
+
+        <section class="facts">
+          <div>
+            <h2>Lean</h2>
+            <p>
+              Subject, From, Date, To, Cc when present—never Bcc. Attachment
+              names, not files.
+            </p>
+          </div>
+          <div>
+            <h2>Readable</h2>
+            <p>
+              Looks like something a careful person wrote. Easy to review,
+              redact, and paste.
+            </p>
+          </div>
+          <div>
+            <h2>Local</h2>
+            <p>
+              No MailContext account, backend, or analytics. Processing stays
+              in the browser.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="foot">
+        <p>Free and open source · MIT</p>
+        <p>
+          <a href="/privacy/">Privacy</a>
+          ·
+          <a href="https://github.com/jlorenzetti/mailcontext">GitHub</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
