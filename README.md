@@ -36,7 +36,7 @@ License: **MIT**. Free; Chrome Web Store first.
 | `extension/` | Unpacked Chrome extension (load this folder) |
 | `docs/` | Product, privacy, ADRs, golden examples |
 | `site/` | Public landing (GitHub Pages → mailcontext.com) |
-| `store/` | Chrome Web Store graphic extras (not in the zip) |
+| `store/` | Listing and social graphics (not in the zip) |
 | `scripts/` | Icon render, zip pack, and site build helpers |
 
 ## Documentation

@@ -1,0 +1,7 @@
+# MailContext public site.
+# https://mailcontext.com
+
+User-agent: *
+Allow: /
+
+Sitemap: https://mailcontext.com/sitemap.xml

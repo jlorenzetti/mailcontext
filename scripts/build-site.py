@@ -11,6 +11,7 @@ lists, tables) so the script runs without pip.
 from __future__ import annotations
 
 import html
+import json
 import re
 import shutil
 import sys
@@ -22,8 +23,18 @@ OUT = ROOT / "dist" / "pages"
 TEMPLATE = SITE / "_privacy.template.html"
 PRIVACY_MD = ROOT / "docs" / "privacy.md"
 ICON = ROOT / "extension" / "icons" / "icon.svg"
+MANIFEST = ROOT / "extension" / "manifest.json"
+OG_PNG = SITE / "og.png"
 
-STATIC = ("index.html", "404.html", "styles.css", "CNAME", ".nojekyll")
+STATIC = (
+    "404.html",
+    "styles.css",
+    "CNAME",
+    ".nojekyll",
+    "robots.txt",
+    "sitemap.xml",
+    "og.png",
+)
 
 INLINE = re.compile(
     r"(`[^`]+`)"
@@ -142,7 +153,15 @@ def privacy_html() -> str:
     return markdown_html(PRIVACY_MD.read_text(encoding="utf-8"))
 
 
+def extension_version() -> str:
+    """Return the version string from extension/manifest.json."""
+    return json.loads(MANIFEST.read_text(encoding="utf-8"))["version"]
+
+
 def main() -> None:
+    if not OG_PNG.is_file():
+        sys.exit("Missing site/og.png. Run ./scripts/render-icons.sh")
+
     if OUT.exists():
         shutil.rmtree(OUT)
     OUT.mkdir(parents=True)
@@ -151,6 +170,14 @@ def main() -> None:
         shutil.copy2(SITE / name, OUT / name)
 
     shutil.copy2(ICON, OUT / "favicon.svg")
+
+    index = (SITE / "index.html").read_text(encoding="utf-8")
+    if "{{version}}" not in index:
+        sys.exit("index.html missing {{version}}")
+    (OUT / "index.html").write_text(
+        index.replace("{{version}}", extension_version()),
+        encoding="utf-8",
+    )
 
     template = TEMPLATE.read_text(encoding="utf-8")
     if "{{content}}" not in template:
