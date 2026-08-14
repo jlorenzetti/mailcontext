@@ -5,7 +5,8 @@
 # Privacy policy
 
 **Last updated:** 14 August 2026  
-**Product:** [MailContext on GitHub](https://github.com/jlorenzetti/mailcontext)
+**Product:** [MailContext](https://mailcontext.com)
+([source](https://github.com/jlorenzetti/mailcontext))
 
 MailContext is a Chrome extension that copies a Gmail message or thread as
 lean Markdown onto your clipboard. It is local-first: there is no MailContext
@@ -80,4 +81,5 @@ users) disclosed as required by store policy.
 
 Open an issue on
 [github.com/jlorenzetti/mailcontext](https://github.com/jlorenzetti/mailcontext),
-or use the support URL listed on the Chrome Web Store item.
+or use the support URL listed on the Chrome Web Store item. The public policy
+is at [mailcontext.com/privacy](https://mailcontext.com/privacy).

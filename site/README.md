@@ -17,12 +17,8 @@ python3 -m http.server -d dist/pages
 
 ## Deploy
 
-Repo **Settings → Pages → Source: GitHub Actions**. Push to `main` runs
-`.github/workflows/deploy-site.yml`.
-
-Custom domain: `site/CNAME` is `mailcontext.com`. Apex **A** records to GitHub
-Pages IPs; `www` **CNAME** to `<user>.github.io`. Then set the custom domain
-in Pages settings and enable HTTPS.
+Push to `main` runs `.github/workflows/deploy-site.yml` (Pages source: GitHub
+Actions). Custom domain: `site/CNAME` is `mailcontext.com`.
 
 ## Install CTA
 

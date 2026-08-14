@@ -2,7 +2,6 @@
 
 Listing text and assets. Contract: [Product Definition v1](product-definition-v1.md).
 Homepage: [mailcontext.com](https://mailcontext.com) ([`site/`](../site/)).
-Until Pages + DNS serve HTTPS, CWS may use the GitHub URLs below.
 
 ## Item
 
@@ -60,9 +59,6 @@ policies. Remote code: none.
 
 Privacy policy URL:
 `https://mailcontext.com/privacy`
-
-Fallback until the domain is live:
-`https://github.com/jlorenzetti/mailcontext/blob/main/docs/privacy.md`
 
 ## Graphic assets
 

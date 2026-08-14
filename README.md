@@ -14,7 +14,7 @@ human-readable Markdown ready to paste anywhere.
 - Product contract: [Product Definition v1](docs/product-definition-v1.md)
 - Ship slice: [MVP Scope v1](docs/mvp-scope-v1.md)
 - Code: [`extension/`](extension/) (Chromium MV3)
-- Privacy: [docs/privacy.md](docs/privacy.md)
+- Privacy: [mailcontext.com/privacy](https://mailcontext.com/privacy) ([source](docs/privacy.md))
 - Store listing copy: [docs/cws-listing.md](docs/cws-listing.md)
 - Public site: [`site/`](site/) → [mailcontext.com](https://mailcontext.com)
 

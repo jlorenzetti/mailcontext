@@ -42,4 +42,4 @@ Icons: [icons/](icons/). Store listing copy:
 
 Email content stays in the browser session and clipboard. No MailContext
 backend, analytics, or OAuth. `Bcc` from Show original is intentionally not
-copied.
+copied. Policy: [mailcontext.com/privacy](https://mailcontext.com/privacy).
