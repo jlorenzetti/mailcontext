@@ -1,0 +1,26 @@
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Design tool sources / locks (keep SVG/PNG in git)
+*.af
+*.af~lock~
+*~.af
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# Logs and temporary files
+*.log
+*.tmp
+tmp/
+dist/

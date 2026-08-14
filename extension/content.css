@@ -1,0 +1,74 @@
+/* MailContext UI — Gmail-like snackbar; Copy actions live in More menus. */
+
+#mailcontext-root {
+  all: initial;
+}
+
+/*
+ * Modeled on Gmail’s `.vh` action snackbar (“Conversazione aggiunta a Speciali”):
+ * white card, soft dual shadow, Google Sans 14px, bottom-left.
+ */
+#mailcontext-toast {
+  position: fixed;
+  z-index: 990;
+  left: 24px;
+  bottom: 24px;
+  box-sizing: border-box;
+  max-width: min(420px, calc(100vw - 48px));
+  min-height: 52px;
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  font: 400 14px/16px "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+  color: #5f6368;
+  background: #fff;
+  box-shadow:
+    0 1px 3px 0 rgba(60, 64, 67, 0.3),
+    0 4px 8px 3px rgba(60, 64, 67, 0.15);
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 120ms linear, transform 120ms linear;
+  pointer-events: none;
+}
+
+#mailcontext-toast[data-visible="true"] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#mailcontext-toast[data-kind="notice"] {
+  color: #5f6368;
+}
+
+#mailcontext-toast[data-kind="error"] {
+  color: #d93025;
+}
+
+/* Classic Gmail `.J-N-JX` icon slot — 20px copy+mail glyph, nv700 tone. */
+.mailcontext-menu-icon.J-N-JX {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  flex: 0 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%235f6368' d='M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z'/%3E%3Cpath fill='none' stroke='%235f6368' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='m7.5 8.25 6 5 6-5'/%3E%3C/svg%3E");
+}
+
+/*
+ * Material menu icons live in a ~16px flex slot; Gmail sprites are 20dp with
+ * -2px vertical margin so they optically center with the label.
+ */
+.mailcontext-menu-icon--material {
+  width: 20px;
+  height: 20px;
+  margin: -2px 0;
+  display: block;
+  flex: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23444746' d='M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z'/%3E%3Cpath fill='none' stroke='%23444746' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='m7.5 8.25 6 5 6-5'/%3E%3C/svg%3E");
+}

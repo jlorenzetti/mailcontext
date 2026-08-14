@@ -1,0 +1,62 @@
+{
+  "manifest_version": 3,
+  "name": "MailContext",
+  "version": "0.1.0",
+  "minimum_chrome_version": "116",
+  "description": "Copy a Gmail message or thread as clean Markdown—ready to paste.",
+  "permissions": ["clipboardWrite", "offscreen", "storage"],
+  "host_permissions": ["https://mail.google.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": [
+        "lib/identity.js",
+        "lib/session.js",
+        "lib/print.js",
+        "lib/parse.js",
+        "lib/original.js",
+        "lib/expand.js",
+        "lib/enrich.js",
+        "lib/format.js",
+        "lib/clipboard.js",
+        "lib/ui.js",
+        "content.js"
+      ],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_title": "MailContext",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png"
+    }
+  },
+  "commands": {
+    "copy-message": {
+      "suggested_key": {
+        "default": "Alt+Shift+M",
+        "mac": "Alt+Shift+M"
+      },
+      "description": "Copy the focused Gmail message"
+    },
+    "copy-thread": {
+      "suggested_key": {
+        "default": "Alt+Shift+T",
+        "mac": "Alt+Shift+T"
+      },
+      "description": "Copy the open Gmail thread"
+    }
+  }
+}

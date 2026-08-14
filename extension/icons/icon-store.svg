@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Chrome Web Store / install dialog 128px mark.
+  96x96 artwork centered with 16px transparent padding (CWS image guide).
+  Plate #1E3A4C. Glyph #F4F7F8.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <rect x="16" y="16" width="96" height="96" rx="20" fill="#1E3A4C" />
+  <g transform="translate(32 32) scale(2.6666667)">
+    <path
+      fill="#F4F7F8"
+      d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"
+    />
+    <path
+      fill="none"
+      stroke="#F4F7F8"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      d="m7.5 8.25 6 5 6-5"
+    />
+  </g>
+</svg>
