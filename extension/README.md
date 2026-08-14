@@ -10,6 +10,10 @@ Pipeline:
 
 ## Install (Chrome / Edge)
 
+End users: [Chrome Web Store](https://chromewebstore.google.com/detail/mailcontext/pgfpfclbekccjjbmmmllpeeimoillomc).
+
+This folder is the unpacked developer path:
+
 1. Open `chrome://extensions`
 2. Enable **Developer mode**
 3. **Load unpacked** → select this `extension/` folder

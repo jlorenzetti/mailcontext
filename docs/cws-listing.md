@@ -8,6 +8,8 @@ Homepage: [mailcontext.com](https://mailcontext.com) ([`site/`](../site/)).
 | Field | Value |
 |---|---|
 | Name | MailContext |
+| Item ID | `pgfpfclbekccjjbmmmllpeeimoillomc` |
+| Store URL | https://chromewebstore.google.com/detail/mailcontext/pgfpfclbekccjjbmmmllpeeimoillomc |
 | Summary (≤132 chars) | Copy a Gmail message or thread as clean Markdown—ready to paste into AI, docs, chat, or notes. |
 | Category | Productivity / Tools |
 | Language | English |

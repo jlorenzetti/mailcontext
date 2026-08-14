@@ -11,6 +11,7 @@ human-readable Markdown ready to paste anywhere.
 
 ## Status
 
+- Chrome Web Store: [MailContext](https://chromewebstore.google.com/detail/mailcontext/pgfpfclbekccjjbmmmllpeeimoillomc)
 - Product contract: [Product Definition v1](docs/product-definition-v1.md)
 - Ship slice: [MVP Scope v1](docs/mvp-scope-v1.md)
 - Code: [`extension/`](extension/) (Chromium MV3)
@@ -18,14 +19,16 @@ human-readable Markdown ready to paste anywhere.
 - Store listing copy: [docs/cws-listing.md](docs/cws-listing.md)
 - Public site: [`site/`](site/) → [mailcontext.com](https://mailcontext.com)
 
-License: **MIT**. Free; Chrome Web Store first.
+License: **MIT**. Free.
 
 ## Try it
 
-1. Chrome → `chrome://extensions` → Developer mode → **Load unpacked** →
-   `extension/`
-2. Open Gmail, reload the tab, open a conversation
-3. Thread/message More (⋮) → **Copy thread** / **Copy message**  
+[Install from the Chrome Web Store](https://chromewebstore.google.com/detail/mailcontext/pgfpfclbekccjjbmmmllpeeimoillomc).
+Contributors can load `extension/` unpacked (`chrome://extensions` → Developer
+mode).
+
+1. Open Gmail, reload the tab, open a conversation
+2. Thread/message More (⋮) → **Copy thread** / **Copy message**  
    Shortcuts: `Alt+Shift+T` / `Alt+Shift+M` (on macOS, `Alt` is **⌥ Option**).
    Remap at `chrome://extensions/shortcuts` if needed.
 
